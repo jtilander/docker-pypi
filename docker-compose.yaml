@@ -1,0 +1,12 @@
+pypi:
+  build: .
+  restart: always
+  environment:
+    - "VIRTUAL_HOST=ct-pypi2.activision.com"
+    - "DEFAULT_USER=ctuser"
+    - "DEFAULT_PASSWD=foobar"
+  volumes:
+    - "/mnt/datavolumes/pypi:/data"
+  log_opt:
+    max-size: "50m"
+    max-file: "5"
