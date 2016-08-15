@@ -10,7 +10,8 @@ RUN apt-get install -yq --no-install-recommends -q wget python gettext-base pyth
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN pip install -U pypiserver
+RUN pip install passlib --upgrade
+RUN pip install -U pypiserver --upgrade
 
 VOLUME /data
 EXPOSE 80
