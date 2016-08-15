@@ -21,7 +21,7 @@ htpasswd /data/.htaccess <username>
 |Name          |Default       |Notes                                          |
 |--------------|--------------|-----------------------------------------------|
 |DEFAULT_USER  |python        |An authorized user                             |
-|DEFAULT_PASSWD|              |                                               |
+|DEFAULT_PASSWD|              |This is the password for the default user.     |
 
 ## Volumes
 
