@@ -22,6 +22,8 @@ htpasswd /data/.htaccess <username>
 |--------------|--------------|-----------------------------------------------|
 |DEFAULT_USER  |python        |An authorized user                             |
 |DEFAULT_PASSWD|              |This is the password for the default user.     |
+|AUTO_UPDATE   |0             |Automatically pull updates each hour from root pypi server|
+
 
 ## Volumes
 
