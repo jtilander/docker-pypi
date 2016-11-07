@@ -1,4 +1,5 @@
-DOCKER_REPO ?= jtilander
+TAG?=test
+DOCKER_REPO?=jtilander
 DC=docker-compose
 
 .PHONY: iterate clean all kill build log up image push
@@ -18,7 +19,7 @@ log:
 	$(DC) logs -f
 
 image:
-	docker build -t $(DOCKER_REPO)/docker-pypi .
+	docker build -t $(DOCKER_REPO)/docker-pypi:$(TAG) .
 
 push:
-	docker push $(DOCKER_REPO)/docker-pypi
+	docker push $(DOCKER_REPO)/docker-pypi:$(TAG)
